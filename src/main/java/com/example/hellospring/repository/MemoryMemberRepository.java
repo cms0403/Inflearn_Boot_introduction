@@ -1,10 +1,12 @@
 package com.example.hellospring.repository;
 
 import com.example.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
 //섹션3 강의 / implements 로 부모인 인터페이스 에서 상속받아서 사용
+@Repository
 public class MemoryMemberRepository implements MemberRepository
 {
     //Map<Key, Value> / Map<변수, 변수> 로 선언한다. Key 는 중복 불가, Value는 중복 가능.
